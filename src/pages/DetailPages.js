@@ -64,7 +64,6 @@ function DetailPages() {
       getJobs();
     }
   }, [params]);
-  console.log(jobsInfo);
   return (
     <Modal
       open={open}
@@ -104,7 +103,7 @@ function DetailPages() {
                   </Typography>
                   <Typography sx={{ mt: 1, mb: 1 }}>Skill:</Typography>
                   <Typography>
-                    {jobsInfo.skills.map((skill, index) => (
+                    {/* {jobsInfo.skills.map((skill, index) => (
                       <Chip
                         key={index}
                         label={skill}
@@ -117,7 +116,7 @@ function DetailPages() {
                           height: 28,
                         }}
                       />
-                    ))}
+                    ))} */}
                   </Typography>
                   <Typography sx={{ mt: 1, mb: 1, color: "#2C3333" }}>
                     City: {jobsInfo.city}

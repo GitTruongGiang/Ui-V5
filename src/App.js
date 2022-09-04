@@ -90,9 +90,7 @@ function App() {
               <Route
                 path="/jobs/:id"
                 element={
-                  <RequireAuth>
-                    <DetailPages />
-                  </RequireAuth>
+                  <RequireAuth childrent={<DetailPages />}></RequireAuth>
                 }
               />
             </Routes>

@@ -5,10 +5,13 @@ import JobCard from "./JobCard";
 function JobList({ jobS }) {
   const [page, setPage] = useState(1);
   const [limit, setLimit] = useState(6);
+
   const handleChange = (event, value) => {
     setPage(value);
   };
+
   const pageCount = Math.ceil(jobS.length / limit);
+
   return (
     <>
       <Grid container spacing={2}>
